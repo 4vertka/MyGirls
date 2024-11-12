@@ -30,7 +30,7 @@ with open(readme_file, 'a') as f:
                 continue  
 
             if len(row_images) == 5:
-                f.write(" | ".join(row_images) + "\n\n")
+                f.write("  ".join(row_images) + "\n\n")
                 row_images = []
 
     if row_images:
