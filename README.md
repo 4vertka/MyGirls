@@ -29,5 +29,5 @@
 
 ![wallhaven-vqkdxm_1920x1080.png](./walls/thumbs/wallhaven-vqkdxm_1920x1080.png)  ![wallhaven-x6mk7o_1920x1080.png](./walls/thumbs/wallhaven-x6mk7o_1920x1080.png)  ![wallhaven-x6r6wd_1920x1080.png](./walls/thumbs/wallhaven-x6r6wd_1920x1080.png)  ![wallhaven-y8jxog_1920x1080.png](./walls/thumbs/wallhaven-y8jxog_1920x1080.png)  ![wallhaven-yx3kex_1920x1080.png](./walls/thumbs/wallhaven-yx3kex_1920x1080.png)
 
-![wallhaven-z8xvkj_1920x1080.png](./walls/thumbs/wallhaven-z8xvkj_1920x1080.png) | ![wp.jpg](./walls/thumbs/wp.jpg)
+![wallhaven-z8xvkj_1920x1080.png](./walls/thumbs/wallhaven-z8xvkj_1920x1080.png)
 
