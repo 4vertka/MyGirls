@@ -5,9 +5,6 @@ readme_file = "README.md"
 
 with open(readme_file, 'a') as f:
     f.write("\n# Wallpaper Gallery\n\n")
-    
-    # Start the table for the image grid
-    f.write("<table>\n")
 
     row_images = []
 
@@ -15,20 +12,17 @@ with open(readme_file, 'a') as f:
         if image_name.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.svg', '.bmp', '.webp', '.tiff')):
             image_path = os.path.join(image_folder, image_name)
 
-            # Add the image as an HTML <img> tag in a table cell <td>
-            row_images.append(f"<td><img src='{image_path}' alt='{image_name}' width='150' height='150'></td>")
+            # Add image as Markdown image link to the list
+            row_images.append(f"![{image_name}]({image_path})")
 
-            # After 5 images, close the row and start a new one
+            # After 5 images, write them to the README and reset the list
             if len(row_images) == 5:
-                f.write("<tr>\n" + "\n".join(row_images) + "\n</tr>\n")
-                row_images = []  # Reset for the next row
+                f.write("  ".join(row_images) + "\n\n")
+                row_images = []
 
     # If there are any remaining images that didn't fill a full row
     if row_images:
-        f.write("<tr>\n" + "\n".join(row_images) + "\n</tr>\n")
+        f.write("  ".join(row_images) + "\n\n")
 
-    # Close the table
-    f.write("</table>\n")
-
-print("README.md updated with images in a grid layout.")
+print("README.md updated with images.")
 
